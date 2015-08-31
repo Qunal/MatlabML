@@ -1,6 +1,4 @@
- userview=memory
 
-userview = 
 
 %     MaxPossibleArrayBytes: 3.4851e+09
 %     MemAvailableAllArrays: 3.4851e+09
@@ -22,6 +20,7 @@ userview =
 %   pmltraining        19622x160            291359841  table 291MB              
 %   userview               1x1                    552  struct     
 userview=memory
+whos
 
 % userview = 
 % 
@@ -29,7 +28,7 @@ userview=memory
 %     MemAvailableAllArrays: 2.9586e+09
 %             MemUsedMATLAB: 1.4864e+09
 
-UsedMem=1.4864e+09-943951872
+% UsedMem=1.4864e+09-943951872
 
 % UsedMem =  542 MB
 % 
