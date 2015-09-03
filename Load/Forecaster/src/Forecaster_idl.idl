@@ -1,0 +1,45 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "mwcomtypes.idl";
+
+[
+  object,
+  uuid("1515271A-78BC-4A0C-A9FD-29C149F13932"),
+  dual,
+  helpstring("IClass1 Interface"),
+  pointer_default(unique)
+]
+interface IClass1 : IDispatch
+{
+  [propget, id(1), helpstring("property MWFlags")]
+  HRESULT MWFlags([out, retval] IMWFlags** ppvFlags);
+  [propput, id(1), helpstring("property MWFlags")]
+  HRESULT MWFlags([in] IMWFlags* pvFlags);
+
+  [id(2), helpstring("Method loadForecast")]
+  HRESULT loadForecast([in] long nargout, [in,out] VARIANT* y, [in] VARIANT date, [in] 
+                       VARIANT hour, [in] VARIANT temperature, [in] VARIANT isWorkingDay, 
+                       [in] VARIANT histDate, [in] VARIANT histHour, [in] VARIANT 
+                       histLoad);
+
+};
+[
+  uuid("8E11DD84-6E23-45D5-B085-87C37D15F34F"),
+  version(1.0),
+  helpstring("Forecaster 1.0 Type Library")
+]
+library Forecaster
+{
+  importlib("stdole32.tlb");
+  importlib("stdole2.tlb");
+  importlib("mwcomutil.tlb");
+
+  [
+    uuid("1CAD517D-68AA-4328-848E-9492D75CCD40"),
+    helpstring("Class1 Class")
+  ]
+  coclass Class1
+  {
+    [default] interface IClass1;
+  };
+};

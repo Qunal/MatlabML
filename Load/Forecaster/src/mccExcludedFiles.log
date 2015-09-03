@@ -1,0 +1,78 @@
+This file contains the list of various toolbox functions that are not 
+included in the CTF file. An error will be thrown if any of these functions 
+ are called at run-time. Some of these functions may be from toolboxes 
+that you are not using in your application. The reason for this is that 
+these toolboxes have overloaded some methods that are called by your code. 
+If you know which toolboxes are being used by your code, you can use the -p 
+ flag with the -N flag to list these toolboxes explicitly. This will 
+cause MATLAB Compiler to only look for functions in the specified toolbox 
+directories in addition to the MATLAB directories. Refer to the MCC 
+documentation for more information on this. 
+
+C:\MATLAB\R2010a\toolbox\stats\private\dfhelpviewer.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfswitchyard.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\stats\private\dfupdatexlim.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfswitchyard.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\stats\private\dfupdateylim.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfswitchyard.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\stats\private\getdsdb.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfswitchyard.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\stats\private\getdsdb.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfgetset.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\stats\private\getfitdb.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\dfgetset.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\init.m 
+  called by C:\Seminars\Load Forecasting\Load\loadForecast.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\init.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\@TreeBagger\TreeBagger.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\init.m 
+  called by C:\MATLAB\R2010a\toolbox\matlab\scribe\legend.m 
+(C:\MATLAB\R2010a\toolbox\compiler\depfun.opts, line 7: 
+exclude if $caller in [$toolbox/matlab, $toolbox/daq] and ...
+           $file in $toolbox and ...
+           $file not in [$toolbox/matlab, $toolbox/shared, $toolbox/compiler] ...
+           and not ($file in $toolbox/distcomp and $caller in $toolbox/matlab)) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\train.m 
+  called by C:\Seminars\Load Forecasting\Load\loadForecast.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\view.m 
+  called by C:\Seminars\Load Forecasting\Load\loadForecast.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\view.m 
+  called by C:\MATLAB\R2010a\toolbox\stats\@TreeBagger\TreeBagger.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\view.m 
+  called by C:\MATLAB\R2010a\toolbox\matlab\specgraph\scatter3.m 
+(C:\MATLAB\R2010a\toolbox\compiler\depfun.opts, line 7: 
+exclude if $caller in [$toolbox/matlab, $toolbox/daq] and ...
+           $file in $toolbox and ...
+           $file not in [$toolbox/matlab, $toolbox/shared, $toolbox/compiler] ...
+           and not ($file in $toolbox/distcomp and $caller in $toolbox/matlab)) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\view.m 
+  called by C:\MATLAB\R2010a\toolbox\matlab\graph3d\surf.m 
+(C:\MATLAB\R2010a\toolbox\compiler\depfun.opts, line 7: 
+exclude if $caller in [$toolbox/matlab, $toolbox/daq] and ...
+           $file in $toolbox and ...
+           $file not in [$toolbox/matlab, $toolbox/shared, $toolbox/compiler] ...
+           and not ($file in $toolbox/distcomp and $caller in $toolbox/matlab)) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\view.m 
+  called by C:\MATLAB\R2010a\toolbox\matlab\specgraph\private\barV6.m 
+(C:\MATLAB\R2010a\toolbox\compiler\depfun.opts, line 7: 
+exclude if $caller in [$toolbox/matlab, $toolbox/daq] and ...
+           $file in $toolbox and ...
+           $file not in [$toolbox/matlab, $toolbox/shared, $toolbox/compiler] ...
+           and not ($file in $toolbox/distcomp and $caller in $toolbox/matlab)) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\gensim.m 
+  called by C:\Seminars\Load Forecasting\Load\loadForecast.m 
+(because of toolbox compilability rules) 
+C:\MATLAB\R2010a\toolbox\nnet\nnet\@network\adapt.m 
+  called by C:\Seminars\Load Forecasting\Load\loadForecast.m 
+(because of toolbox compilability rules) 

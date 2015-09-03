@@ -1,0 +1,414 @@
+ant:
+<ant>
+  <mkdir dir="C:\AE\miningmachine\steelplates\fault_detect\for_redistribution" />
+  <mkdir dir="C:\AE\miningmachine\steelplates\fault_detect\for_testing" />
+</ant>
+mcc -W 'excel:fault_detect,Class1,1.0' -T link:lib -b -d C:\AE\miningmachine\steelplates\fault_detect\for_testing -v C:\AE\miningmachine\steelplates\steelfault.m class{Class1:C:\AE\miningmachine\steelplates\steelfault.m} -a C:\AE\miningmachine\steelplates\model_TB2.mat 
+[Warning: Function display has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[Warning: Function format has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+Compiler version: 5.1 (R2014a)
+Dependency analysis by REQUIREMENTS.
+Begin validation of MEX files: Thu Jul 03 13:27:09 2014
+Validating 'C:\MATLAB\R2014a32bit\bin\win32\activeset.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\bin\win32\barrierqplp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\bin\win32\libmwslicot.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\bin\win32\milp.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\bin\win32\optimutil.dll'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\ident\nlident\@linear\soevaluate.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\ident\nlident\@wavenet\soevaluate.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\optim\optim\private\activesetqp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\optim\optim\private\slbiMex.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\HamEig.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\HamGenEig.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\bdschur.mexw32'.
+Found MATLAB file 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\bdschur.m'.
+MEX file 
+    'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\bdschur.mexw32' 
+ is valid. It contains 'mexFunction.'
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\ddaeresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\ddaesim.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\frdelay.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\frkernel.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\hlyapslv.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\lyapslv.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\matscale.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\mimozero.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\normrank.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\quadgp1.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\quadgp2.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\rrqrf.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\ssfresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\ssresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\sssim.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\sylvslv.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\tfresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\tfsim.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\triperm.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\zpkboderesp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\zpkfresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\zpkresp.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\shared\controllib\engine\numerics\zpksim.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+svmutils\computeGramMatrix.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+svmutils\predict.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+svmutils\solve.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+treeutils\computePruneInfo.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+treeutils\findNode.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\classreg\+classreg\+learning\+treeutils\growTree.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\@classregtree\private\classregtreeEval.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\@classregtree\private\classregtreeRCcritval.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\private\pdist2mex.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\private\pdistmex.mexw32'.
+No conflicting MATLAB file found.
+Validating 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\private\wswor.mexw32'.
+Found MATLAB file 'C:\MATLAB\R2014a32bit\toolbox\stats\stats\private\wswor.m'.
+MEX file 
+    'C:\MATLAB\R2014a32bit\toolbox\stats\stats\private\wswor.mexw32' 
+ is valid. It contains 'mexFunction.'
+End validation of MEX files: Thu Jul 03 13:27:09 2014
+[Warning: Adding path "C:\AE\miningmachine\steelplates" to Compiler path
+instance.] 
+Parsing file "C:\AE\miningmachine\steelplates\steelfault.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "C:\MATLAB\R2014a32bit\toolbox\compiler\deploy\deployprint.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "C:\MATLAB\R2014a32bit\toolbox\compiler\deploy\printdlg.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 46 temporary MEX authorization files.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_28562_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_32072_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_12375_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_14405_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23579_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23975_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_17250_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_30123_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_1879_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_29841_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_1708_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_21267_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_15147_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23214_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_30130_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_29996_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_3480_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_9848_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_352_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23612_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_13405_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_12174_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_14894_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_20715_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_10061_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_22794_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_22294_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_19796_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23271_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_23804_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_9025_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_17430_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_15135_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_27672_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_28383_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_8172_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_22484_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_11220_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_31392_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_13319_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_17372_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_6128_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_10734_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_15985_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_482_8992.auth'.
+Removing: 'C:\Users\dwilling\AppData\Local\Temp\mathworks_tmp_8992_21334_8992.auth'.
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.hpp".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.cpp".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_dll.cpp".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.rc".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.bas".
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.xla".
+[Warning: Fail to generate
+C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.xla. The
+most likely cause for this error is Excel is not configured to "Trust access to
+the VBA project object model". The way to enable the configuration varies for
+different versions of Excel. In Excel 2007 it can be enabled in the "Macro
+Settings" pane in "Trust Center",  which is found under the "Office Button" ->
+"Excel Options".] 
+[> In makeExcelAddIn at 64] 
+Generating file "C:\AE\miningmachine\steelplates\fault_detect\for_testing\readme.txt".
+Executing command: ""C:\MATLAB\R2014a32bit\bin\mbuild"  -client mbuild_com "OUTDIR=\"C:\AE\miningmachine\steelplates\fault_detect\for_testing\"" -O -v -output "fault_detect_1_0" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing"  "COMIDL=\"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl\"" "mclxlmain.lib" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.cpp" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_dll.cpp"  "DEFFILE=\"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def\""  "RCFILE=\"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.rc\"" "RESFILE=\"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res\"" "LINKFLAGS=\"$LINKFLAGS delayimp.lib /delayload:mclmcrrt8_3.dll\"" -outdir "C:\AE\miningmachine\steelplates\fault_detect\for_testing""Verbose mode is on.
+No MEX options file identified; looking for an implicit selection.
+... Looking for compiler 'Intel C++ Composer XE 2011 with Microsoft SDK 7.1' ...
+... Looking for environment variable 'ICPP_COMPILER12' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2011 with Microsoft SDK 7.1'.
+... Looking for compiler 'Intel C++ Composer XE 2011 with Microsoft Visual Studio 2008' ...
+... Looking for environment variable 'ICPP_COMPILER12' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2011 with Microsoft Visual Studio 2008'.
+... Looking for compiler 'Intel C++ Composer XE 2011 with Microsoft Visual Studio 2010 ' ...
+... Looking for environment variable 'ICPP_COMPILER12' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2011 with Microsoft Visual Studio 2010 '.
+... Looking for compiler 'Intel C++ Composer XE 2013 with Microsoft SDK 7.1' ...
+... Looking for environment variable 'ICPP_COMPILER14' ...No.
+... Looking for environment variable 'ICPP_COMPILER13' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2013 with Microsoft SDK 7.1'.
+... Looking for compiler 'Intel C++ Composer XE 2013 with Microsoft Visual Studio 2010' ...
+... Looking for environment variable 'ICPP_COMPILER14' ...No.
+... Looking for environment variable 'ICPP_COMPILER13' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2013 with Microsoft Visual Studio 2010'.
+... Looking for compiler 'Intel C++ Composer XE 2013 with Microsoft Visual Studio 2012' ...
+... Looking for environment variable 'ICPP_COMPILER14' ...No.
+... Looking for environment variable 'ICPP_COMPILER13' ...No.
+Did not find installed compiler 'Intel C++ Composer XE 2013 with Microsoft Visual Studio 2012'.
+... Looking for compiler 'Microsoft Visual C++ 2012' ...
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VS7' 11.0 ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe' ...Yes.
+... Looking for folder 'C:\Program Files (x86)\Microsoft Visual Studio 11.0' ...Yes.
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0' InstallationFolder ...Yes ('C:\Program Files (x86)\Windows Kits\8.0\').
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VS7' 11.0 ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\').
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VC7' 11.0 ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\').
+... Looking for environment variable 'VS110COMNTOOLS' ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe' ...Yes.
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VS7' 11.0 ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 11.0\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat' ...Yes.
+... Looking for folder 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC' ...Yes.
+Found installed compiler 'Microsoft Visual C++ 2012'.
+... Looking for compiler 'Microsoft Visual C++ 2008 Professional' ...
+... Looking for environment variable 'VS90COMNTOOLS' ...No.
+Did not find installed compiler 'Microsoft Visual C++ 2008 Professional'.
+... Looking for compiler 'Microsoft Visual C++ 2010 Professional' ...
+... Looking for environment variable 'VS100COMNTOOLS' ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe' ...Yes.
+... Looking for folder 'C:\Program Files (x86)\Microsoft Visual Studio 10.0' ...Yes.
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v7.0A' InstallationFolder ...Yes ('C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\').
+... Looking for environment variable 'VS100COMNTOOLS' ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe' ...Yes.
+... Looking for environment variable 'VS100COMNTOOLS' ...Yes ('C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\').
+... Looking for file 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat' ...Yes.
+... Looking for folder 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC' ...Yes.
+Found installed compiler 'Microsoft Visual C++ 2010 Professional'.
+... Looking for compiler 'Microsoft Visual C++ 2013 Professional' ...
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VS7' 12.0 ...No.
+... Looking for registry setting 'HKCU\SOFTWARE\Microsoft\VisualStudio\SxS\VS7' 12.0 ...No.
+... Looking for registry setting 'HKLM\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7' 12.0 ...No.
+... Looking for registry setting 'HKCU\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7' 12.0 ...No.
+Did not find installed compiler 'Microsoft Visual C++ 2013 Professional'.
+... Looking for compiler 'Microsoft Windows SDK 7.1 (C++)' ...
+... Looking for registry setting 'HKLM\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v7.1' InstallationFolder ...No.
+Did not find installed compiler 'Microsoft Windows SDK 7.1 (C++)'.
+Options file details
+-------------------------------------------------------------------
+	Compiler location: C:\Program Files (x86)\Microsoft Visual Studio 10.0
+	Options file: C:\MATLAB\R2014a32bit\bin\win32\mexopts\msvcpp2010.xml
+	CMDLINE200 : link  /nologo  /manifest kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /incremental:NO delayimp.lib /delayload:mclmcrrt8_3.dll   /DLL /def:"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def" C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj  mclxlmain.lib  /LIBPATH:"C:\MATLAB\R2014a32bit\extern\lib\win32\microsoft" libmx.lib libmex.lib libmat.lib mclmcrrt.lib "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res" /out:C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll
+	CMDLINE250 : mt -outputresource:C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll;2 -manifest C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.manifest
+	CMDLINE300 : del C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.manifest mwcomutil.tlb "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res"
+	COMPILER : cl
+	COMPFLAGS : /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT
+	COMPDEFINES : /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0
+	MATLABMEX : 
+	OPTIMFLAGS : /O2 /Oy- /DNDEBUG
+	INCLUDE : -IC:\AE\miningmachine\steelplates\fault_detect\for_testing  -I"C:\MATLAB\R2014a32bit\extern\include" -I"C:\MATLAB\R2014a32bit\simulink\include" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing" -I"C:\MATLAB\R2014a32bit\extern\include\win32"
+	DEBUGFLAGS : /Z7
+	LINKER : link
+	LINKFLAGS :  /nologo  /manifest kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /incremental:NO delayimp.lib /delayload:mclmcrrt8_3.dll
+	LINKTYPE : 
+	LINKEXPORT : /DLL /def:"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def"
+	LINKLIBS : mclxlmain.lib  /LIBPATH:"C:\MATLAB\R2014a32bit\extern\lib\win32\microsoft" libmx.lib libmex.lib libmat.lib mclmcrrt.lib "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res"
+	LINKDEBUGFLAGS : /debug /PDB:"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.pdb"
+	LINKOPTIMFLAGS : 
+	OBJEXT : .obj
+	LDEXT : .dll
+	SETENV : set COMPILER=cl 
+				set COMPFLAGS=/c /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0  
+				set OPTIMFLAGS=/O2 /Oy- /DNDEBUG 
+				set DEBUGFLAGS=/Z7 
+				set LINKER=link 
+				set LINKFLAGS= /nologo  /manifest kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /incremental:NO delayimp.lib /delayload:mclmcrrt8_3.dll /export:%ENTRYPOINT%  mclxlmain.lib  /LIBPATH:"C:\MATLAB\R2014a32bit\extern\lib\win32\microsoft" libmx.lib libmex.lib libmat.lib mclmcrrt.lib "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res" /DLL /def:"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def" 
+				set LINKDEBUGFLAGS=/debug /PDB:"%OUTDIR%%MEX_NAME%.dll.pdb" 
+				set NAME_OUTPUT=/out:"%OUTDIR%%MEX_NAME%%MEX_EXT%"
+	VSROOT : C:\Program Files (x86)\Microsoft Visual Studio 10.0
+	SDKROOT : C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\
+	PROF_ENV : C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe
+	VCVARSALLDIR : C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC
+	MATLABROOT : C:\MATLAB\R2014a32bit
+	ARCH : win32
+	CMDLINE000 : copy "C:\MATLAB\R2014a32bit\extern\include\win32\mwcomutil.tlb" .
+	CMDLINE001 : midl /nologo /win32 -I"C:\MATLAB\R2014a32bit\extern\include" /D NDEBUG /out "C:\AE\miningmachine\steelplates\fault_detect\for_testing" mwcomtypes.idl
+	CMDLINE002 : midl /nologo /win32 -I"C:\MATLAB\R2014a32bit\extern\include" /D NDEBUG /out "C:\AE\miningmachine\steelplates\fault_detect\for_testing" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl"
+	CMDLINE150 : rc /fo "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.rc"
+	CMDLINE275 : "C:\MATLAB\R2014a32bit\runtime\win32\mwregsvr.exe" C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll
+	OUTDIR : C:\AE\miningmachine\steelplates\fault_detect\for_testing
+	COMPINCLUDE : -I"C:\MATLAB\R2014a32bit\extern\include"
+	USERONLY : 
+	SRC : C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.cpp;C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_dll.cpp
+	OBJ : C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj;C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj
+	OBJS : C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj 
+	SRCROOT : C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com
+	DEF : C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_1_0.def
+	EXP : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.exp
+	LIB : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.lib
+	EXE : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll
+	ILK : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.ilk
+	MANIFEST : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.manifest
+	TEMPNAME : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0
+	EXEDIR : C:\AE\miningmachine\steelplates\fault_detect\for_testing\
+	EXENAME : fault_detect_1_0
+	COMIDL : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl
+	DEFFILE : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def
+	RCFILE : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.rc
+	RESFILE : C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res
+	OPTIM : /O2 /Oy- /DNDEBUG
+	LINKOPTIM : 
+	CMDLINE100_0 : cl /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT /O2 /Oy- /DNDEBUG /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0 -IC:\AE\miningmachine\steelplates\fault_detect\for_testing  -I"C:\MATLAB\R2014a32bit\extern\include" -I"C:\MATLAB\R2014a32bit\simulink\include" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing" -I"C:\MATLAB\R2014a32bit\extern\include\win32" -I"C:\MATLAB\R2014a32bit\extern\include" C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.cpp /FoC:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj
+	CMDLINE100_1 : cl /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT /O2 /Oy- /DNDEBUG /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0 -IC:\AE\miningmachine\steelplates\fault_detect\for_testing  -I"C:\MATLAB\R2014a32bit\extern\include" -I"C:\MATLAB\R2014a32bit\simulink\include" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing" -I"C:\MATLAB\R2014a32bit\extern\include\win32" -I"C:\MATLAB\R2014a32bit\extern\include" C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_dll.cpp /FoC:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj
+-------------------------------------------------------------------
+Building with 'Microsoft Visual C++ 2010 Professional'.
+Set PATH = C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Bin;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Bin\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\Bin;;C:\MATLAB\MATLAB Production Server\R2014a\script;C:\Python27\Lib\site-packages\PyQt4;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MathWorks\DevelTools\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files (x86)\Lenovo\Access Connections\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\MATLAB\R2014a32bit\runtime\win32;C:\MATLAB\R2014a32bit\bin;C:\MATLAB\R2014a\runtime\win64;C:\MATLAB\R2014a\bin;C:\MATLAB\R2013b\runtime\win32;C:\MATLAB\R2013b\bin;C:\MATLAB\R2013a32\runtime\win32;C:\MATLAB\R2013a32\bin;C:\Python27;C:\Python27\DLLs;C:\Python27\Scripts;C:\Python27\Lib\site-packages\vtk;C:\Python27\gnuplot\binary;C:\Program Files (x86)\pythonxy\SciTE-3.3.2-3;C:\Program Files (x86)\pythonxy\console;C:\MinGW32-xy\bin;C:\MATLAB\MATLAB Compiler Runtime\v82\runtime\win32;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;c:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\MATLAB\R2013b\polyspace\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\MATLAB\R2014a\polyspace\bin;C:\MATLAB\MATLAB Compiler Runtime\v83\runtime\win64;C:\Program Files (x86)\Git\cmd;C:\MATLAB\R2014a32bit\polyspace\bin
+Set INCLUDE = C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include;
+Set LIB = C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\Lib;
+Set LIBPATH = C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Lib;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\lib;C:\MATLAB\R2014a32bit\extern\lib\win32;;
+copy "C:\MATLAB\R2014a32bit\extern\include\win32\mwcomutil.tlb" .
+        1 file(s) copied.
+
+midl /nologo /win32 -I"C:\MATLAB\R2014a32bit\extern\include" /D NDEBUG /out "C:\AE\miningmachine\steelplates\fault_detect\for_testing" mwcomtypes.idl
+mwcomtypes.idl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+basetsd.h
+guiddef.h
+ocidl.idl
+oleidl.idl
+servprov.idl
+urlmon.idl
+msxml.idl
+oaidl.acf
+ocidl.acf
+
+Processing C:\MATLAB\R2014a32bit\extern\include\mwcomtypes.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oaidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\objidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\unknwn.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\wtypes.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\basetsd.h
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\guiddef.h
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\ocidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oleidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\servprov.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\urlmon.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\msxml.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oaidl.acf
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\ocidl.acf
+
+midl /nologo /win32 -I"C:\MATLAB\R2014a32bit\extern\include" /D NDEBUG /out "C:\AE\miningmachine\steelplates\fault_detect\for_testing" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl"
+fault_detect_idl.idl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+basetsd.h
+guiddef.h
+ocidl.idl
+oleidl.idl
+servprov.idl
+urlmon.idl
+msxml.idl
+mwcomtypes.idl
+oaidl.acf
+ocidl.acf
+
+Processing C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_idl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oaidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\objidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\unknwn.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\wtypes.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\basetsd.h
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\guiddef.h
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\ocidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oleidl.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\servprov.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\urlmon.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\msxml.idl
+Processing C:\MATLAB\R2014a32bit\extern\include\mwcomtypes.idl
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\oaidl.acf
+Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include\ocidl.acf
+
+cl /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT /O2 /Oy- /DNDEBUG /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0 -IC:\AE\miningmachine\steelplates\fault_detect\for_testing  -I"C:\MATLAB\R2014a32bit\extern\include" -I"C:\MATLAB\R2014a32bit\simulink\include" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing" -I"C:\MATLAB\R2014a32bit\extern\include\win32" -I"C:\MATLAB\R2014a32bit\extern\include" C:\AE\miningmachine\steelplates\fault_detect\for_testing\Class1_com.cpp /FoC:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj
+Class1_com.cpp
+
+cl /c /GR /W3 /EHsc- -Zc:wchar_t /nologo /MT /O2 /Oy- /DNDEBUG /DMSVC /DIBMPC /D_CRT_SECURE_NO_DEPRECATE /D_SECURE_SCL=0 -IC:\AE\miningmachine\steelplates\fault_detect\for_testing  -I"C:\MATLAB\R2014a32bit\extern\include" -I"C:\MATLAB\R2014a32bit\simulink\include" -I"C:\AE\miningmachine\steelplates\fault_detect\for_testing" -I"C:\MATLAB\R2014a32bit\extern\include\win32" -I"C:\MATLAB\R2014a32bit\extern\include" C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_dll.cpp /FoC:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj
+fault_detect_dll.cpp
+
+rc /fo "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res" "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.rc"
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+link  /nologo  /manifest kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /incremental:NO delayimp.lib /delayload:mclmcrrt8_3.dll   /DLL /def:"C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.def" C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\Class1_com.obj C:\Users\dwilling\AppData\Local\Temp\mex_21433235566627_8860\fault_detect_dll.obj  mclxlmain.lib  /LIBPATH:"C:\MATLAB\R2014a32bit\extern\lib\win32\microsoft" libmx.lib libmex.lib libmat.lib mclmcrrt.lib "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res" /out:C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll
+   Creating library C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.lib and object C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.exp
+
+mt -outputresource:C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll;2 -manifest C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.manifest
+Microsoft (R) Manifest Tool version 5.2.3790.2076
+
+Copyright (c) Microsoft Corporation 2005. 
+
+All rights reserved.
+
+
+"C:\MATLAB\R2014a32bit\runtime\win32\mwregsvr.exe" C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll
+DllRegisterServer in C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll succeeded
+
+del C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect_1_0.dll.manifest mwcomutil.tlb "C:\AE\miningmachine\steelplates\fault_detect\for_testing\fault_detect.res"
+MEX completed successfully.
+Packaging...
+Creating the bundle...
+Web based installer created at C:\AE\miningmachine\steelplates\fault_detect\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.

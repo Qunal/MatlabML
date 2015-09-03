@@ -1,0 +1,198 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Using Sequential Feature Selection</title><meta name="generator" content="MATLAB 7.13"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2011-09-22"><meta name="DC.source" content="Sequential_Feature_Selection_Example.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Using Sequential Feature Selection</h1><!--introduction--><p>The white wine data set consists of 5000 different White Wines produced in Portugal. We&#8217;re going to build a model that will predict wine quality based on chemical composition, and then simplify that model to see which variables are actually important.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Clean up and set random number generator</a></li><li><a href="#2">Import our data</a></li><li><a href="#3">Covariance Matrix</a></li><li><a href="#4">Use sequential feature selection to identify significant variables</a></li><li><a href="#5">Display signifcant variables</a></li></ul></div><h2>Clean up and set random number generator<a name="1"></a></h2><p>Many of the techniques that we're using make use of random sampling. Setting the random number generation will allow us to reproduce these results precisely.</p><pre class="codeinput">clear <span class="string">all</span>
+clc
+
+rng(2010);
+</pre><h2>Import our data<a name="2"></a></h2><pre class="codeinput">White_Wine = dataset(<span class="string">'xlsfile'</span>, <span class="string">'White_Wine.xlsx'</span>);
+X = double(White_Wine(:,1:11));
+Y = double(White_Wine(:,12));
+</pre><h2>Covariance Matrix<a name="3"></a></h2><pre class="codeinput">covmat = corrcoef(double(White_Wine));
+
+figure
+x = size(White_Wine, 2);
+imagesc(covmat);
+set(gca,<span class="string">'XTick'</span>,1:x);
+set(gca,<span class="string">'YTick'</span>,1:x);
+set(gca,<span class="string">'XTickLabel'</span>,shortlabels(White_Wine.Properties.VarNames));
+set(gca,<span class="string">'YTickLabel'</span>,White_Wine.Properties.VarNames);
+axis([0 x+1 0 x+1]);
+grid;
+colorbar;
+</pre><img vspace="5" hspace="5" src="Sequential_Feature_Selection_Example_01.png" alt=""> <h2>Use sequential feature selection to identify significant variables<a name="4"></a></h2><pre class="codeinput">tic
+
+<span class="comment">% Create a cvpartition object that defined the folds</span>
+c2 = cvpartition(Y,<span class="string">'k'</span>,10);
+
+<span class="comment">% Set options</span>
+opts = statset(<span class="string">'display'</span>,<span class="string">'iter'</span>, <span class="string">'useparallel'</span>, <span class="string">'always'</span>);
+
+<span class="comment">% Opening up a MATLAB pool to run in parallel</span>
+matlabpool <span class="string">open</span> <span class="string">2</span>
+
+fun = @(Xtrain,Ytrain,Xtest,Ytest)<span class="keyword">...</span>
+      sum(Ytest~=predict(NaiveBayes.fit(Xtrain,Ytrain,<span class="string">'Distribution'</span>,<span class="string">'kernel'</span>),Xtest));
+
+[fs,history] = sequentialfs(fun,X,Y,<span class="string">'cv'</span>,c2,<span class="string">'options'</span>,opts);
+
+toc;
+
+<span class="comment">% Closing the MATLAB pool</span>
+matlabpool <span class="string">close</span>
+</pre><pre class="codeoutput">Warning: One or more folds do not contain points from all the groups. 
+Warning: Found 1 pre-existing parallel job(s) created by matlabpool that are running.
+You can use   'matlabpool close force local'    or create a configuration for the
+distcomp.localscheduler object and use   'matlabpool close force &lt;configurationName&gt;'
+to remove all jobs created by matlabpool. 
+Starting matlabpool using the 'local' configuration ... connected to 2 labs.
+Start forward sequential feature selection:
+Initial columns included:  none
+Columns that can not be included:  none
+Step 1, added column 11, criterion value 0.501837
+Step 2, added column 2, criterion value 0.473254
+Step 3, added column 1, criterion value 0.467334
+Step 4, added column 6, criterion value 0.464679
+Final columns included:  1 2 6 11 
+Elapsed time is 83.687186 seconds.
+Sending a stop signal to all the labs ... stopped.
+</pre><h2>Display signifcant variables<a name="5"></a></h2><pre class="codeinput">White_Wine.Properties.VarNames(fs)
+</pre><pre class="codeoutput">
+ans = 
+
+    'FixAcid'    'VolAcid'    'FreeS02'    'Alcohol'
+
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.13<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Using Sequential Feature Selection
+% The white wine data set consists of 5000 different White Wines produced
+% in Portugal. We’re going to build a model that will predict wine quality
+% based on chemical composition, and then simplify that model to see which
+% variables are actually important.
+
+%% Clean up and set random number generator
+% Many of the techniques that we're using make use of random sampling.
+% Setting the random number generation will allow us to reproduce these
+% results precisely.
+
+clear all
+clc
+
+rng(2010);
+
+%% Import our data
+
+White_Wine = dataset('xlsfile', 'White_Wine.xlsx');
+X = double(White_Wine(:,1:11));
+Y = double(White_Wine(:,12));
+
+%% Covariance Matrix
+covmat = corrcoef(double(White_Wine));
+
+figure
+x = size(White_Wine, 2);
+imagesc(covmat);
+set(gca,'XTick',1:x);
+set(gca,'YTick',1:x);
+set(gca,'XTickLabel',shortlabels(White_Wine.Properties.VarNames));
+set(gca,'YTickLabel',White_Wine.Properties.VarNames);
+axis([0 x+1 0 x+1]);
+grid;
+colorbar;
+
+%%  Use sequential feature selection to identify significant variables
+
+tic
+
+% Create a cvpartition object that defined the folds
+c2 = cvpartition(Y,'k',10);
+
+% Set options
+opts = statset('display','iter', 'useparallel', 'always');
+
+% Opening up a MATLAB pool to run in parallel
+matlabpool open 2
+
+fun = @(Xtrain,Ytrain,Xtest,Ytest)...
+      sum(Ytest~=predict(NaiveBayes.fit(Xtrain,Ytrain,'Distribution','kernel'),Xtest));
+  
+[fs,history] = sequentialfs(fun,X,Y,'cv',c2,'options',opts);
+
+toc;
+
+% Closing the MATLAB pool
+matlabpool close
+
+%% Display signifcant variables
+
+White_Wine.Properties.VarNames(fs)
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

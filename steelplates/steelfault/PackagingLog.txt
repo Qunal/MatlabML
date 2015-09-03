@@ -1,0 +1,6 @@
+ant:
+<ant>
+  <mkdir dir="C:\AE\miningmachine\steelplates\steelfault\for_redistribution" />
+  <mkdir dir="C:\AE\miningmachine\steelplates\steelfault\for_testing" />
+</ant>
+mcc -W 'excel:steelfault,Class1,1.0' -T link:lib -b -d C:\AE\miningmachine\steelplates\steelfault\for_testing -v C:\AE\miningmachine\steelplates\steelfault.m class{Class1:C:\AE\miningmachine\steelplates\steelfault.m} 

@@ -1,0 +1,7 @@
+LIBRARY Forecaster_1_0.dll
+EXPORTS
+  DllGetClassObject PRIVATE
+  DllCanUnloadNow PRIVATE
+  DllRegisterServer PRIVATE
+  DllUnregisterServer PRIVATE
+  
